@@ -10,7 +10,7 @@
 
   <!-- Начало хедера -->
 
-  <header class="main-header container">
+  <header class="main-header">
     <div class="main-nav__wrapper">
       <nav class="main-nav">
         <div class="main-header__logo-image-wrapper">
@@ -37,7 +37,7 @@
       </nav>
     </div>
     <section class="main-header__content content">
-      <div class="content-wrapper container">
+      <div class="content-wrapper">
         <h1 class="content__title title">Функциональное питание для котов</h1>
         <p class="content__text">Занялся собой? Займись котом!</p>
         <a class="content__button button" href="form.html">Подобрать программу</a>
@@ -52,7 +52,7 @@
 
     <!-- Начало секции программы питания -->
 
-    <section class="programs container">
+    <section class="programs">
       <h2 class="visually-hidden">Программы питания</h2>
       <div class="programs-wrapper">
         <div class="programs__item programs__item--slim">
@@ -79,18 +79,20 @@
 
     <!-- Начало секции как это работает -->
 
-    <section class="benefits container">
-      <h2 class="benefits__title title">Как это работает</h2>
-      <ol class="benefits__list">
-        <li class="benefits__list-item benefits__list-item--first">Функциональное питание
-          содержит только полезные питательные вещества.</li>
-        <li class="benefits__list-item benefits__list-item--second">Выпускается в виде порошка,
-          который нужно лишь залить кипятком и готово.</li>
-        <li class="benefits__list-item benefits__list-item--third">Замените один-два приема
-          обычной еды на наше функциональное питание.</li>
-        <li class="benefits__list-item benefits__list-item--fourth">Уже через месяц наслаждайтесь
-          изменениями к лучшему вашего питомца!</li>
-      </ol>
+    <section class="benefits">
+      <div class="benefits-wrapper">
+        <h2 class="benefits__title title">Как это работает</h2>
+        <ol class="benefits__list">
+          <li class="benefits__list-item benefits__list-item--first">Функциональное питание
+            содержит только полезные питательные вещества.</li>
+          <li class="benefits__list-item benefits__list-item--second">Выпускается в виде порошка,
+            который нужно лишь залить кипятком и готово.</li>
+          <li class="benefits__list-item benefits__list-item--third">Замените один-два приема
+            обычной еды на наше функциональное питание.</li>
+          <li class="benefits__list-item benefits__list-item--fourth">Уже через месяц наслаждайтесь
+            изменениями к лучшему вашего питомца!</li>
+        </ol>
+      </div>
     </section>
 
     <!-- Конец секции как это работает -->
@@ -98,26 +100,26 @@
     <!-- Начало секции живого примера -->
 
     <section class="example">
-      <div class="example-wrapper container">
-        <title class="example__title title">Живой пример</title>
+      <div class="example-wrapper">
+        <h2 class="example__title title">Живой пример</h2>
         <p class="example__description description">Борис сбросил 5 кг за 2 месяца, просто заменив свой
           обычный корм на Cat Energy Slim. Отличный результат
           без изнуряющих тренировок! При этом он не менял своих
           привычек и по-прежнему спит по 16 часов в день.</p>
         <div class="example__stats example-stats">
-          <dl class="example-stats__items">
-            <div class="example-stats__item">
-              <dt class="example-stats__item-number">5 кг</dt>
-              <dd class="example-stats__item-text">Снижение веса</dd>
-            </div>
-            <div class="example-stats__item">
-              <dt class="example-stats__item-number">60 дней</dt>
-              <dd class="example-stats__item-text">Затрачено времени</dd>
-            </div>
-          </dl>
+          <ul class="example-stats__items">
+            <li class="example-stats__item">
+              <b class="example-stats__item-number">5 кг</b>
+              <p class="example-stats__item-text">Снижение веса</p>
+            </li>
+            <li class="example-stats__item">
+              <b class="example-stats__item-number">60 дней</b>
+              <p class="example-stats__item-text">Затрачено времени</p>
+            </li>
+          </ul>
           <p class="example__spending">
-            <span class="example__spending-text"></span>
-            <span class="example__spending-number"></span>
+            <span class="example__spending-text">Затраты на питание:</span>
+            <span class="example__spending-number">15 000 Руб.</span>
           </p>
           <div class="example__slider slider">
             <div class="slider__images">
@@ -153,7 +155,6 @@
         </div>
         <div class="info__adress-wrapper">
           <address class="info__adress">ул. Большая Конюшенная, д. 19/8
-            <br>
             <span class="info__city">Санкт-Петербург</span>
           </address>
         </div>
@@ -161,7 +162,7 @@
     </section>
     <section class="page-footer__contacts contacts">
       <h2 class="visually-hidden">Подвал сайта</h2>
-      <div class="page-footer__contacts-wrapper container">
+      <div class="page-footer__contacts-wrapper">
         <a href="" class="page-footer__logo footer-logo">
           <img class="footer__logo-image" src="" alt="Кэт энерджи">
         </a>
