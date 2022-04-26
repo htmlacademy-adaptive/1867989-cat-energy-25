@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+  <base href="https://htmlacademy-adaptive.github.io/1867989-cat-energy-25/3/">
+</head>
+
+<body class="page__body">
+
+  <!-- Начало хедера -->
+
+  <header class="main-header">
+    <div class="main-nav__wrapper">
+      <nav class="main-nav">
+        <div class="main-header__logo-image-wrapper">
+          <a class="main-header__logo logo" href="/">
+            <img class="main-header__logo-image" src="" alt="Кэт энерджи">
+          </a>
+          <button class="main-nav__toggle">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__item--current" href="programm-selection.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Конец хедера -->
+
+  <main class="main-container">
+    <div class="main-container-wrapper">
+      <h1 class="main-container__title title">Подбор программы</h1>
+      <p class="main-container__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+
+      <!-- Начало контактных данных (кота) -->
+
+      <form class="form-program form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="form-program__wrapper">
+          <fieldset class="form-program__fieldset form-program__info">
+            <legend class="visually-hidden">Информация о коте</legend>
+            <ul class="form-program__list">
+              <li class="form-program__list-item">
+                <label class="form-program__label form-label" for="cat-name">Имя:*</label>
+                <input class="form-program__input form-input" name="cat-name" id="cat-name" type="text"
+                  placeholder="Барсик" required>
+              </li>
+              <li class="form-program__list-item">
+                <label class="form-program__label form-label" for="cat-weight">Вес (кг):*</label>
+                <input class="form-program__input form-input" name="cat-weight" id="cat-weight" type="text"
+                  placeholder="7" required>
+              </li>
+              <li class="form-program__list-item">
+                <label class="form-program__label form-label" for="cat-age">Возраст (лет):</label>
+                <input class="form-program__input form-input" name="cat-age" id="cat-age" type="text" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form-program__fieldset form-program__programs">
+            <legend class="visually-hidden">Выбор программы</legend>
+            <ul class="form-program__list form-program__list-program">
+              <li class="form-program__list-item">
+                <input class="form-program__radio visually-hidden" name="program" id="program-slim" type="radio" checked>
+                <label class="form-program__radio-label form-radio-label form-label" for="program-slim">Похудение</label>
+              </li>
+              <li class="form-program__list-item">
+                <input class="form-program__radio visually-hidden" name="program" id="program-pro" type="radio">
+                <label class="form-program__radio-label form-radio-label form-label" for="program-pro">Набор массы</label>
+              </li>
+              <li class="form-program__list-item">
+                <input class="form-program__radio visually-hidden" name="program" id="program-idk" type="radio">
+                <label class="form-program__radio-label form-radio-label form-label" for="program-idk">Не знаю (Нужен ваш
+                  совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <!-- Конец контактных данных (кота) -->
+
+          <!-- Начало контактных данных (владельца) -->
+
+          <fieldset class="form-program__fieldset form-program__contacts">
+            <legend class="form-program__subtitle subtitle">Контактные данные (владельца кота)</legend>
+            <ul class="form-program__list form-program__list-contacts">
+              <li class="form-program__list-item">
+                <label class="form-program__label form-label" for="email">E-mail:*</label>
+                <input class="form-program__input form-program__input--contacts form-input" name="email" id="email"
+                  type="email" placeholder="кuklachev@gmail.com" required>
+              </li>
+              <li class="form-program__list-item">
+                <label class="form-program__label form-label" for="phone">Телефон:*</label>
+                <input class="form-program__input form-program__input--contacts form-input" name="phone" id="phone"
+                  type="tel" placeholder="8 (960) 900-60-90" required>
+              </li>
+            </ul>
+          </fieldset>
+
+          <!-- Конец контактных данных (владельца) -->
+
+          <!-- Начало комментария -->
+
+          <div class="form-program__feildset form-program__about">
+            <label class="form-program__subtitle subtitle" for="">Комментарий</label>
+            <div class="form-program__about-wrapper">
+              <textarea class="form-program__textarea form-input" name="about" id="about"
+                placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
+          </div>
+
+          <!-- Конец комментария -->
+
+          <!-- Начало дополнительных чекбоксов -->
+
+          <fieldset class="form-program__fieldset form-program__extra">
+            <legend class="form-program__subtitle subtitle">Дополнительно</legend>
+            <ul class="form-program__list form-program__list-extra">
+              <li class="form-program__list-item">
+                <input class="form-program__checkbox visually-hidden" type="checkbox" id="sweetener" name="extra" checked>
+                <label class="form-program__label-checkbox form-label-checkbox form-input"
+                  for="sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="form-program__list-item">
+                <input class="form-program__checkbox visually-hidden" type="checkbox" id="water" name="extra">
+                <label class="form-program__label-checkbox form-label-checkbox form-input" for="water">Питьевая
+                  вода</label>
+              </li>
+              <li class="form-program__list-item">
+                <input class="form-program__checkbox visually-hidden" type="checkbox" id="milk" name="extra">
+                <label class="form-program__label-checkbox form-label-checkbox form-input"
+                  for="milk">Сахарозаменитель</label>
+              </li>
+              <li class="form-program__list-item">
+                <input class="form-program__checkbox visually-hidden" type="checkbox" id="vitamins" name="extra">
+                <label class="form-program__label-checkbox form-label-checkbox form-input" for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="form-program__submit-wrapper">
+            <button class="form-program__button button--order" type="submit">Отправить заявку</button>
+            <p class="form-program__notification">* — Обязательные поля</p>
+          </div>
+        </div>
+
+        <!-- Конец дополнительных чекбоксов -->
+
+      </form>
+    </div>
+  </main>
+
+  <!-- Начало футера -->
+
+  <footer class="page-footer">
+    <section class="page-footer__info info">
+      <h2 class="visually-hidden">Расположение компании на карте и контактная информация</h2>
+      <div class="info__wrapper">
+        <div class="info__title-wrapper">
+          <h3 class="info__title">Приглашаем к сотрудничеству дилеров!</h3>
+        </div>
+        <div class="info__adress-wrapper">
+          <address class="info__adress">ул. Большая Конюшенная, д. 19/8
+            <br>
+            <span class="info__city">Санкт-Петербург</span>
+          </address>
+        </div>
+      </div>
+    </section>
+    <section class="page-footer__contacts contacts">
+      <h2 class="visually-hidden">Подвал сайта</h2>
+      <div class="page-footer__contacts-wrapper">
+        <a href="" class="page-footer__logo footer-logo">
+          <img class="footer__logo-image" src="" alt="Кэт энерджи">
+        </a>
+        <ul class="social-links">
+          <li class="social-links__item">
+            <a class="social-links__link" href="https://vk.com/htmlacademy"></a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link" href="https://www.instagram.com/htmlacademy/"></a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link" href="https://www.facebook.com/htmlacademy"></a>
+          </li>
+        </ul>
+        <a class="page-footer__academy-logo academy-logo">
+          <span class="academy-logo__text">HTML Academy</span>
+          <img class="academy-logo__image" src="" alt="HTML Academy">
+        </a>
+      </div>
+    </section>
+  </footer>
+
+  <!-- Конец футера -->
+
+</body>
+
+</html>
